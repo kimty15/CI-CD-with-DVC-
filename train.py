@@ -1,7 +1,8 @@
 import pandas as pd 
 import numpy as np
 #from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
-from sklearn.ensemble import RandomForestRegressor
+# from sklearn.ensemble import RandomForestRegressor
+from sklearn.tree import DecisionTreeRegressor
 from sklearn import preprocessing
 from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import confusion_matrix
@@ -30,7 +31,8 @@ X = imp.transform(X)
 
 # Linear model
 # clf = QuadraticDiscriminantAnalysis()
-clf =  RandomForestRegressor()
+# clf =  RandomForestRegressor()
+clf = DecisionTreeRegressor()
 yhat = cross_val_predict(clf, X, y, cv=5)
 
 acc = np.mean(yhat==y)
