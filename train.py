@@ -34,7 +34,7 @@ X = imp.transform(X)
 # clf = QuadraticDiscriminantAnalysis()
 # clf =  RandomForestRegressor()
 # clf = DecisionTreeRegressor()
-clf = linear_model.Lasso(alpha=0.1)
+clf = linear_model.BayesianRidge()
 yhat = cross_val_predict(clf, X, y, cv=5)
 
 acc = np.mean(yhat==y)
