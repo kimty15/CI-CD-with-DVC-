@@ -1,1 +1,2 @@
-# Using DVC for CI-CD ML model
+# Using DVC for CI/CD ML project
+
