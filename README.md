@@ -1,2 +1,2 @@
-# Using DVC for CI/CD ML project
+# Using DVC and Github Actions for CI/CD ML project
 
