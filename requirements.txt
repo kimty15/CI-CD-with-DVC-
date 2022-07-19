@@ -1,5 +1,5 @@
-wget
-sklearn
-pandas
 seaborn
+pandas
+numpy
 matplotlib
+sklearn
